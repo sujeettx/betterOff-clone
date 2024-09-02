@@ -75,14 +75,22 @@ main>.left {
     font-weight: 400;
     margin-bottom: 10px;
 }
-marquee {
-    font-size: 390px;
-    font-weight: 850;
-    font-family: "Bebas Neue", sans-serif;
-    margin-top: -6px;
+.slider {
+    display: flex;
+    font-size: 280px;
+    font-weight: 900;
+    overflow-x: hidden;
+    animation: slider 2s infinite ;
 }
-marquee>img {
-    height: 280px;
+
+@keyframes slider {
+    to{
+        transform: translateX(0);
+    }
+    from{
+        transform: translateX(-100);
+    }
+    
 }
 .Cokkies {
     background-color: white;
