@@ -76,11 +76,13 @@ main>.left {
     margin-bottom: 10px;
 }
 .slider {
+    margin-bottom: 0;
     display: flex;
-    font-size: 280px;
-    font-weight: 900;
+    font-size: 230px;
     overflow-x: hidden;
     animation: slider 2s infinite ;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
 }
 
 @keyframes slider {
@@ -120,15 +122,15 @@ main>.left {
     flex-direction: column;
     gap: 50px;
     width: 80vw;
-    margin: 20px 30px;
-    font-size: 26px;
+    margin: 0px 30px;
+    font-size: 30px;
     margin-bottom: 100px;
     color: rgb(30, 30, 30);
 }
 .page3>.page3-content>h1{
-    font-weight: 500;
-    word-spacing: 0;
-    font-family: "DM Serif Text", serif;
+    font-weight:lighter;
+    color: #52524e;
+    font-family: "Bebas Neue", system-ui;;
 }
 .page3 hr{
     height: 2px;
@@ -173,4 +175,31 @@ main>.left {
     width: 10vw;
     font-size: 14px;
 }
-
+.page5{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    /* height: 100vh; */
+    width: 100vw;
+}
+.page5-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    font-size: 12px;
+}
+.page5 .page5-content>video{
+    width: 27rem;
+    height: 0.7em;
+    vertical-align: middle;
+    object-fit: cover;
+}
+.page5 .page5-content{
+    margin-top: 100px;
+    margin-bottom: 0;
+    line-height: 0.8;
+   font-size: 540px;
+   font-weight: bold;
+   text-align: center;
+   font-family: "Bebas Neue", system-ui;
+}
