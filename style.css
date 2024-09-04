@@ -12,6 +12,9 @@ body {
     background-color: #e5e7df;
     scrollbar-width: none;
 }
+.hamburger-menu>i{
+    display: block;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -42,7 +45,7 @@ nav>ul>li {
 }
 main {
     display: flex;
-    margin-top: 90px;
+    margin-top: 80px;
     /* margin-bottom: 0; */
     width: 100%;
 }
@@ -54,11 +57,12 @@ main>.left {
 }
 .right>.right-contnet {
     width: 95%;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
-.right-contnet>h1 {
-    font-size: 30px;
-    font-weight: 900;
+.right-contnet h1 {
+    font-size: 49px;
+    padding-left: 60px;
+    font-weight: normal;
 }
 .left>.left-content {
     width: 70%;

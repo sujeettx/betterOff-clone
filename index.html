@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="Media.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +32,10 @@
       <li>Work</li>
       <li>Feed</li>
     </ul>
-    <h1 style="border-bottom: 1px solid black">Pricing</h1>
+    <div class="hamburger-menu">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <h1 class="fibber">Pricing</h1>
   </nav>
   <main>
     <div class="left">
@@ -46,7 +50,7 @@
     </div>
     <div class="right">
       <div class="right-contnet">
-        <h1 style="font-weight: 600; font-size: 50px">
+        <h1 style="font-weight: 600;">
           Premium quality creative at lean rates for growing businesses.
           Packaged as subscriptions or bundled projects.
         </h1>
@@ -118,7 +122,11 @@
     </div>
   </div>
   </div>
-
+  <script>
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+      document.querySelector('nav').classList.toggle('menu-open');
+    });
+  </script>
   <div class="Cokkies">
     <h1>This website uses Cookies</h1>
     <h1 class="Accepct" style="border-bottom: 1px solid black">Accept</h1>
